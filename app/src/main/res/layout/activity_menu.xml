@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.socialmap.MenuActivity">
+
+    <TextView
+        android:id="@+id/EmailV"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/Телефон"
+        app:layout_constraintEnd_toEndOf="@+id/Телефон"
+        app:layout_constraintStart_toEndOf="@+id/Телефон"
+        app:layout_constraintTop_toBottomOf="@+id/E-mail" />
+
+    <TextView
+        android:id="@+id/NameV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/E-mail"
+        app:layout_constraintEnd_toEndOf="@+id/EmailV"
+        app:layout_constraintStart_toStartOf="@+id/Имя"
+        app:layout_constraintTop_toBottomOf="@+id/Имя" />
+
+    <TextView
+        android:id="@+id/PhoneV"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="299dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Телефон"
+        app:layout_constraintStart_toEndOf="@+id/Телефон"
+        app:layout_constraintTop_toBottomOf="@+id/Телефон" />
+
+    <TextView
+        android:id="@+id/Имя"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Имя"
+        app:layout_constraintBottom_toTopOf="@+id/NameV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/E-mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        app:layout_constraintBottom_toTopOf="@+id/EmailV"
+        app:layout_constraintStart_toStartOf="@+id/EmailV"
+        app:layout_constraintTop_toBottomOf="@+id/NameV" />
+
+    <TextView
+        android:id="@+id/Телефон"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Телефон"
+        app:layout_constraintBottom_toTopOf="@+id/PhoneV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailV" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Выход"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="41dp"
+        android:text="Карта"
+        android:onClick="Map"
+        app:layout_constraintBottom_toTopOf="@+id/Телефон"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Exit"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

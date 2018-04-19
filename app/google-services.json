@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1089917219065",
+    "firebase_url": "https://socialmap-5eb26.firebaseio.com",
+    "project_id": "socialmap-5eb26",
+    "storage_bucket": "socialmap-5eb26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089917219065:android:d4a0f52db79483ec",
+        "android_client_info": {
+          "package_name": "com.example.socialmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089917219065-81vh59tios3k6e2hv3otl834c8lpqhl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialmap",
+            "certificate_hash": "d5ed3b9e4fbacad02eb2c6311cd78341b1225747"
+          }
+        },
+        {
+          "client_id": "1089917219065-2dshqmlil6gem876tf48noe868ihd09s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8gbnuEIT6RyGidz4naDA7OQtn_-p3xgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089917219065-2dshqmlil6gem876tf48noe868ihd09s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
