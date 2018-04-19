@@ -44,13 +44,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private static final String TAG = MapsActivity.class.getName();
-    LatLng Label, LabelOld;
+    LatLng Label, LabelOld, Fried;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     FirebaseUser users = mAuth.getInstance().getCurrentUser();
+
 
 
     @Override
@@ -157,6 +158,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Coordinates user=dataSnapshot.getValue(Coordinates.class);
                 String key=dataSnapshot.getKey();
+                Label = new LatLng(user.latitude, user.longitude);
+                mMap.addMarker(new MarkerOptions().position(Label).title(users.getUid()));
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(Label));
             }
 
             @Override
