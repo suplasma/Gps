@@ -1,5 +1,6 @@
 package com.example.socialmap;
 
+// TODO: поля можно сделать приватными
 public class Coordinates {
     public String user;
     public double latitude;

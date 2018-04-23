@@ -20,9 +20,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
+    // TODO разный стиль именования полей, где-то с m, где-то без, и с большой буквы
     private EditText Email;
     private EditText Password;
 
+    // TODO кнопки нигде не используются
     Button Reg;
     Button Enter;
 
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         };
 
+        // TODO тут и выше одинаковый код, можно вынести.
         FirebaseUser user = mAuth.getCurrentUser();
         if (user != null) {
 
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.Reg).setOnClickListener(this);
     }
     public void onClick(View view) {
+        // TODO скобки нужно ставить на той же строке, что и условия
         if(view.getId() == R.id.Reg)
         {
             Intent intent = new Intent(this,RegActivity.class);
@@ -78,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
+                    // TODO строки нужно убрать в ресурсы
                     Toast.makeText(MainActivity.this, "Aвторизация успешна", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this,MenuActivity.class);
                     startActivity(intent);
