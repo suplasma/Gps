@@ -42,6 +42,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
+    // TODO очень много полей не используется
     private GoogleMap mMap;
     private static final String TAG = MapsActivity.class.getName();
     LatLng Label, LabelOld, Fried;
@@ -131,10 +132,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
+        // TODO а почему коллбек пустой?
 
     }
 
+    // TODO методы должны называться с маленькой буквы
     public  void Base(final Location location) {
         mAuth.signInAnonymously().addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -152,6 +154,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Label));
     }
 
+    // TODO метод нигде не используется
     private void displayFreidsPosition(){
         FirebaseDatabase.getInstance().getReference("coordinates").addChildEventListener(new ChildEventListener() {
             @Override

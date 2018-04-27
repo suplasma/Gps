@@ -4,6 +4,7 @@ package com.example.socialmap;
  * Created by Евгений on 28.02.2018.
  */
 
+// TODO поля должны быть приватными
 public class User {
 
     public String name;
